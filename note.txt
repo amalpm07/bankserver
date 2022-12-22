@@ -1,0 +1,89 @@
+server creation
+---------------
+1.import express
+2.create an app using express
+3.create a port number(3000)
+
+4.create request accodrding to our project
+
+
+
+nodemon server
+--------------
+npm i -g nodemon
+
+
+user authentication using express
+---------------------------------
+
+JWT(json web token):- is use for authentication
+-------------------
+jsonwebtoken  - library
+sign() - method is used to genarate  token
+install - npm i jsonwebtoken
+verify()- method to verify jwt token
+
+
+middlewares
+-----------
+-it have the capacity to control server request
+-its a function withe 3 arguments 
+    1.request
+    2.response 
+    3.next
+
+two types of middlewares
+
+  1.application specification middlewares 
+
+  2.Router specification middlewares
+
+
+  solving run-time error in js
+  -----------------------------
+  try,catch
+
+  try{
+    error causing code
+  }
+
+  catch{
+    solution
+  }
+
+
+mongo DB(unstruched)
+----------
+mongodb server
+
+shell commandsvin mongodb
+  -to see the database
+    ->show dbs
+  
+  -open database
+    ->use database_name
+  
+  -view collections inside database
+    ->show collections
+  
+  -to  view data inside collections
+    ->db.collection_name.find()
+ 
+  -to view any single data inside collections
+    ->db.collection_name.findOne({uniquly identify object})
+  
+  -to insert new data(at tym one data add to method)
+    ->db.collection_name.insertOne({data})
+  
+  -to view any single data accodrding to a condition
+    ->db.collection_name.findOne({condition})
+  
+  -delete single data
+    ->db.collection_name.deleteOne({data})
+    -delete count=number(if delete item find)
+    -delete count=0(if delete item not find)
+  
+  -update
+    ->db.collection_name.updateOne({data to be update},{new data})
+
+    crud:-create read update delete
